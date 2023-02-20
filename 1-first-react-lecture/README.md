@@ -9,5 +9,7 @@ React library is responsible for creating views and ReactDOM library is responsi
 actually render UI in the browser.
 
 **What is async and defer?**
-Async allows your script to run as soon as it's loaded, without blocking other elements on the page. 
+Async allows your script to run as soon as it's loaded, without blocking other elements on the page. Gets
+executed as soon as it is available (before parsing completes)
 Defer means your script will only execute after the page has finished loading.
+(gets executed only when full parsing is done)
