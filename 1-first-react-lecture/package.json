@@ -4,6 +4,7 @@
   "description": "This is a course to learn react",
   "main": "app.js",
   "scripts": {
+    "start" : "parcel index.html",
     "test": "jest"
   },
   "repository": {

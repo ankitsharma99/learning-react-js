@@ -1,6 +1,6 @@
 4328
 73/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/index.html1677008629249433172 0
-89/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/dist/index.5baa4167.js.map1677008908296878744 0
+89/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/dist/index.5baa4167.js.map1677179342252644196 0
 105/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/dist/1-first-react-lecture.3464ddca.js.map1677008446433323548 0
 85/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/dist/index.7c0ccee6.js1677008446393324503 0
 96/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/type-fest/index.d.ts1677007907365057168 0
@@ -299,7 +299,7 @@
 112/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/cosmiconfig/dist/cacheWrapper.js.map1677007907309060226 0
 127/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@babel/highlight/node_modules/color-convert/LICENSE1677007907205065904 0
 134/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@babel/highlight/node_modules/color-convert/conversions.js1677007907141069399 0
-85/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/dist/index.5baa4167.js1677008908284878913 0
+85/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/dist/index.5baa4167.js1677179342236645620 0
 119/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@babel/highlight/node_modules/color-convert1677007907221065031 1
 128/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@babel/highlight/node_modules/chalk/types/index.d.ts1677007907257063065 0
 124/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@babel/highlight/node_modules/chalk/package.json1677007907105071364 0
@@ -327,7 +327,7 @@
 98/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/picomatch/lib/parse.js1677007907193066559 0
 102/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/picomatch/lib/constants.js1677007907109071146 0
 102/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/picomatch/lib/picomatch.js1677007907205065904 0
-86/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/dist/index.9e4c6fd2.css1677008768514992561 0
+86/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/dist/index.9e4c6fd2.css1677179342104657364 0
 85/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/picomatch1677007907317059789 1
 95/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/is-number/README.md1677007907133069835 0
 95/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/braces/package.json1677007907081072674 0
@@ -495,7 +495,7 @@
 102/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@parcel/types/package.json1677007907229064594 0
 120/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/css-tree/lib/syntax/pseudo/nth-last-child.js1677007907697039041 0
 94/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@parcel/plugin/lib1677007907105071364 1
-78/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/dist/index.html1677008768682989836 0
+78/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/dist/index.html1677179342168651670 0
 98/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@parcel/plugin/LICENSE1677007907081072674 0
 107/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@parcel/plugin/src/PluginAPI.js1677007907157068525 0
 90/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@parcel/plugin1677007907157068525 1
@@ -667,7 +667,7 @@
 96/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@parcel/workers/test1677007907509049306 1
 104/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@parcel/workers/package.json1677007907517048869 0
 104/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@parcel/workers/lib/child.js1677007907229064594 0
-67/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/dist1677008908300878688 1
+67/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/dist1677179342252644196 1
 105/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@parcel/workers/lib/Worker.js1677007907489050398 0
 104/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@parcel/workers/lib/index.js1677007907385056076 0
 107/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@parcel/workers/lib/cpuCount.js1677007907337058697 0
@@ -1649,7 +1649,7 @@
 112/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/caniuse-lite/data/features/bigint.js1677007907557046685 0
 161/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/package-browser-alias/browser.js1677007907437053237 0
 117/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/caniuse-lite/data/features/import-maps.js1677007907893028339 0
-62/home/ankit/Desktop/namaste-react-course/1-first-react-lecture1677008192996605755 1
+62/home/ankit/Desktop/namaste-react-course/1-first-react-lecture1677179339028931023 1
 120/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/caniuse-lite/data/features/serviceworkers.js1677007907953025064 0
 107/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/caniuse-lite/data/regions/LS.js1677007907917027029 0
 113/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@parcel/utils/src/prettyDiagnostic.js1677007907617043409 0
@@ -1886,7 +1886,7 @@
 90/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/tslib/tslib.js1677007907225064812 0
 96/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/tslib/tslib.es6.html1677007907065073548 0
 107/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/caniuse-lite/data/regions/RU.js1677007907949025282 0
-69/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/app.js1677009015839430246 0
+69/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/app.js1677179333661408479 0
 118/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/caniuse-lite/data/features/rel-noopener.js1677007907945025500 0
 99/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@parcel/fs/src/index.js1677007907309060226 0
 99/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/mdn-data/css/types.json1677007907489050398 0
@@ -3627,7 +3627,7 @@
 112/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/lmdb/dependencies/lz4/lib/lz4frame.h1677007907757035765 0
 85/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/yaml/dist1677007907533047995 1
 83/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/is-json1677007907149068962 1
-75/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/package.json1677008192404626157 0
+75/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/package.json1677182516286914068 0
 95/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/is-json/.travis.yml1677007907173067651 0
 101/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@parcel/core/src/types.js1677007907809032926 0
 99/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@parcel/packager-js/lib1677007907413054547 1
@@ -4018,7 +4018,7 @@
 121/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@parcel/transformer-css/lib/CSSTransformer.js1677007907121070490 0
 117/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/caniuse-lite/data/features/svg-filters.js1677007907961024627 0
 122/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@swc/helpers/src/_async_generator_delegate.mjs1677007907581045375 0
-90/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/dist/index.9e4c6fd2.css.map1677008768522992431 0
+90/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/dist/index.9e4c6fd2.css.map1677179342112656653 0
 109/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/caniuse-lite/data/features/rem.js1677007907949025282 0
 122/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@swc/helpers/src/_interop_require_wildcard.mjs1677007907653041444 0
 119/home/ankit/Desktop/namaste-react-course/1-first-react-lecture/node_modules/@parcel/optimizer-svgo/src/SVGOOptimizer.js1677007907157068525 0
