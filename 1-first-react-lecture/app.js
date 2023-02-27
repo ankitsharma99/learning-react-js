@@ -67,11 +67,13 @@ const styleObj = {
 // );
 const AppLayout = () => {
   return (
-    <div style={styleObj}>
+    // <div style={styleObj}>
+    <>
       <HeaderComponent />
       <Body />
       <Footer />
-    </div>
+      {/* </div> */}
+    </>
   );
 };
 
