@@ -47,8 +47,33 @@ const HeaderComponent = () => {
   );
 };
 
+const RestaurantCard = () => {
+  return (
+    <div className="card">
+      <img
+        src="https://images.news18.com/ibnlive/uploads/2021/01/1610716314_untitled-design-2021-01-15t184025.049.jpg"
+        alt="Pizza"
+      />
+      <h2>Burger King Pixxa</h2>
+      <h3>Pizza, American</h3>
+      <h4>4 stars</h4>
+    </div>
+  );
+};
+
 const Body = () => {
-  return <h4>Body</h4>;
+  return (
+    <div className="restaurant-list">
+      <RestaurantCard />
+      <RestaurantCard />
+      <RestaurantCard />
+      <RestaurantCard />
+      <RestaurantCard />
+      <RestaurantCard />
+      <RestaurantCard />
+      <RestaurantCard />
+    </div>
+  );
 };
 
 const Footer = () => {
