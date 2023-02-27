@@ -13,11 +13,12 @@ const temp = // React Element
 const HeaderComponent = () => {
   return (
     <div>
-      <h1>Funcitonal Component</h1>
+      {temp}
+      <h2>Funcitonal Component</h2>
       <h2>This is an H2</h2>
     </div>
   );
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(temp);
+root.render(<HeaderComponent />);
