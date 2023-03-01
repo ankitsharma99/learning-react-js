@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
+import Header from "./components/Header"; // default import
+import { Title } from "./components/Header"; // named import
 /*
     Header
       - Logo
@@ -18,45 +19,23 @@ import ReactDOM from "react-dom/client";
     Footer
    */
 
-const Title = () => (
-  <a href="/">
-    <img
-      className="logo"
-      alt="logo-food-villa"
-      src="https://lh3.googleusercontent.com/p/AF1QipO_6cTc3QdC9L2vAOyCkUPG-G-9YeFxo3YiDu3R=w1080-h608-p-no-v0"
-    />
-  </a>
-);
-
 // Components: Functional And Class Based
 
-const HeaderComponent = () => {
-  return (
-    <div className="header">
-      {/* {console.log("Any JS Code here")} */}
-      <Title /> {/*Component Composition */}
-      <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact Us</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
+const PizzaHut = {
+  name: "Pizza Hut",
+  image:
+    "https://images.news18.com/ibnlive/uploads/2021/01/1610716314_untitled-design-2021-01-15t184025.049.jpg",
+  rating: 4,
+  cuisine: ["American", "Pizza"],
 };
 
 const RestaurantCard = () => {
   return (
     <div className="card">
-      <img
-        src="https://images.news18.com/ibnlive/uploads/2021/01/1610716314_untitled-design-2021-01-15t184025.049.jpg"
-        alt="Pizza"
-      />
-      <h2>Burger King Pixxa</h2>
-      <h3>Pizza, American</h3>
-      <h4>4 stars</h4>
+      <img src={PizzaHut.image} alt="pizza hut image logo" />
+      <h3>{PizzaHut.name}</h3>
+      <p>{PizzaHut.rating}</p>
+      <p>{PizzaHut.cuisine.join(",")}</p>
     </div>
   );
 };
@@ -84,17 +63,10 @@ const styleObj = {
   backgroundColor: "red",
 };
 
-// const JsxExample = (
-//   <div style={styleObj}>
-//     <h1>Hello</h1>
-//     <h2>World</h2>
-//   </div>
-// );
 const AppLayout = () => {
   return (
-    // <div style={styleObj}>
     <>
-      <HeaderComponent />
+      <Header />
       <Body />
       <Footer />
       {/* </div> */}
