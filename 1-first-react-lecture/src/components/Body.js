@@ -1,8 +1,11 @@
+import { useState } from "react";
 import RestaurantCard from "./RestaurantCard";
 
 const Body = () => {
+  const [searchText, setsearchText] = useState("");
+
   const onChangeInput = (e) => {
-    console.log(e.target.value);
+    setsearchText(e.target.value);
   };
   return (
     <>
@@ -11,7 +14,7 @@ const Body = () => {
           type="text"
           className="search-input"
           placeholder="search"
-          value=""
+          value={searchText}
           onChange={(e) => onChangeInput(e)}
         />
         <button className="search-btn">Search</button>
