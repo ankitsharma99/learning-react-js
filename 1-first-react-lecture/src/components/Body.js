@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { restaurantList } from "../constants";
 import RestaurantCard from "./RestaurantCard";
+import Shimmer from "./Shimmer";
 
 const filterData = (searchText, restaurants) => {
   const data = restaurants.filter((restaurant) =>
@@ -10,14 +11,14 @@ const filterData = (searchText, restaurants) => {
 };
 
 const Body = () => {
-  const [restaurants, setRestaurants] = useState(restaurantList);
+  const [restaurants, setRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
     console.log("rednering restaurants");
     // API Call
     getRestaurants();
-  }, [restaurants]);
+  }, []);
 
   async function getRestaurants() {
     const data = await fetch(
@@ -25,12 +26,12 @@ const Body = () => {
     );
 
     const json = await data.json();
-    // console.log(json);
-    console.log(json.data.cards[2].data.data.cards);
-    // setRestaurants(json.)
+    setRestaurants(json?.data?.cards[2]?.data?.data?.cards);
   }
 
-  return (
+  return restaurants.length === 0 ? (
+    <Shimmer />
+  ) : (
     <>
       <div className="search-container">
         <input

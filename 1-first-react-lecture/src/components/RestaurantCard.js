@@ -7,7 +7,6 @@ const RestaurantCard = ({
   area,
   lastMileTravelString,
   costForTwoString,
-  avgRating,
 }) => {
   return (
     <div className="card">
@@ -16,14 +15,6 @@ const RestaurantCard = ({
       <h5>{cuisines.join(", ")}</h5>
       <h3>{area}</h3>
       <span>
-        <h4
-          style={
-            avgRating < 4 ? { backgroundColor: "red" } : { color: "white" }
-          }
-        >
-          <i className="fa-solid fa-star"></i>
-          {avgRating}
-        </h4>
         <h4>{lastMileTravelString}</h4>
         <h4>{costForTwoString}</h4>
       </span>
