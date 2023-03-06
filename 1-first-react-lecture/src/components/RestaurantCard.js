@@ -1,10 +1,32 @@
-const RestaurantCard = ({ image, name, rating, cuisine }) => {
+import { IMG_CDN_URL } from "../constants";
+
+const RestaurantCard = ({
+  cloudinaryImageId,
+  name,
+  cuisines,
+  area,
+  lastMileTravelString,
+  costForTwoString,
+  avgRating,
+}) => {
   return (
     <div className="card">
-      <img src={image} alt="pizza hut image logo" />
-      <h3>{name}</h3>
-      <p>{rating}</p>
-      <p>{cuisine.join(",")}</p>
+      <img src={IMG_CDN_URL + cloudinaryImageId} />
+      <h2>{name}</h2>
+      <h5>{cuisines.join(", ")}</h5>
+      <h3>{area}</h3>
+      <span>
+        <h4
+          style={
+            avgRating < 4 ? { backgroundColor: "red" } : { color: "white" }
+          }
+        >
+          <i className="fa-solid fa-star"></i>
+          {avgRating}
+        </h4>
+        <h4>{lastMileTravelString}</h4>
+        <h4>{costForTwoString}</h4>
+      </span>
     </div>
   );
 };

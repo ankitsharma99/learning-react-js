@@ -16,7 +16,20 @@ const Body = () => {
   useEffect(() => {
     console.log("rednering restaurants");
     // API Call
+    getRestaurants();
   }, [restaurants]);
+
+  async function getRestaurants() {
+    const data = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&page_type=DESKTOP_WEB_LISTING"
+    );
+
+    const json = await data.json();
+    // console.log(json);
+    console.log(json.data.cards[2].data.data.cards);
+    // setRestaurants(json.)
+  }
+
   return (
     <>
       <div className="search-container">
