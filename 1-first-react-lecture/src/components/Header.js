@@ -9,6 +9,7 @@ const Title = () => (
 );
 
 const Header = () => {
+  console.log("rendering Head");
   return (
     <div className="header">
       {/* {console.log("Any JS Code here")} */}

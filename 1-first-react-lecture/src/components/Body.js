@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { restaurantList } from "../constants";
 import RestaurantCard from "./RestaurantCard";
 
@@ -13,6 +13,10 @@ const Body = () => {
   const [restaurants, setRestaurants] = useState(restaurantList);
   const [searchText, setSearchText] = useState("");
 
+  useEffect(() => {
+    console.log("rednering restaurants");
+    // API Call
+  }, [restaurants]);
   return (
     <>
       <div className="search-container">
