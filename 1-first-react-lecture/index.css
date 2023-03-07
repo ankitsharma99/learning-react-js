@@ -38,3 +38,10 @@
   padding: 10px;
   margin: 0 10px;
 }
+
+.shimmer-card {
+  width: 200px;
+  height: 200px;
+  background-color: lightgrey;
+  margin: 20px;
+}

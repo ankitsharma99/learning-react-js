@@ -31,7 +31,7 @@ const Body = () => {
     setfilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
   }
 
-  return allRestaurants.length === 0 ? (
+  return allRestaurants?.length === 0 ? (
     <Shimmer />
   ) : (
     <>
@@ -54,7 +54,7 @@ const Body = () => {
         </button>
       </div>
 
-      {filteredRestaurants.length == 0 ? (
+      {filteredRestaurants?.length == 0 ? (
         <h1>No Restaurants Found</h1>
       ) : (
         <div className="restaurant-list">
