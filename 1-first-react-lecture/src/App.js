@@ -8,7 +8,7 @@ import About from "./components/About";
 import Error from "./components/Error";
 import Contact from "./components/Contact";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 /*
     Header
       - Logo
@@ -30,9 +30,8 @@ const AppLayout = () => {
   return (
     <>
       <Header />
-      <About />
-      <Body />
-      <Contact />
+      {/* Render all other components (Outlet) */}
+      <Outlet />
       <Footer />
     </>
   );
@@ -44,6 +43,10 @@ const appRouter = createBrowserRouter([
     element: <AppLayout />,
     errorElement: <Error />,
     children: [
+      {
+        path: "/",
+        element: <Body />,
+      },
       {
         path: "/about",
         element: <About />,
