@@ -4,7 +4,7 @@ const Error = () => {
   const err = useRouteError();
 
   // can also destructure": const {status, statusText, data} = useRouteError();
-  console.log(err.data);
+  // console.log(err.data);
   return (
     <div>
       <h1>Something went wrong</h1>

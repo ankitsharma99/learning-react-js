@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { IMG_CDN_URL } from "../constants";
 import Shimmer from "../components/Shimmer";
+import Error from "./Error";
 
 const RestaurantDetails = () => {
   const params = useParams();
@@ -23,8 +24,8 @@ const RestaurantDetails = () => {
     setRestaurant(json.data);
   }
 
-  return restaurant ? (
-    <div>
+  return (
+    <div className="menu">
       <div>
         <h1>Restaurant id: {params.id}</h1>
         <h2>Namaste From our Restaurant</h2>
@@ -49,19 +50,17 @@ const RestaurantDetails = () => {
                   <li key={item.id}>{item.name}</li>
                 ))
               ) : (
-                <li>Not Found</li>
+                <Error />
               )
             ) : (
-              <li>Not Found</li>
+              <Error />
             )
           ) : (
-            <li>Not Found</li>
+            <Error />
           )}
         </ul>
       </div>
     </div>
-  ) : (
-    <Shimmer />
   );
 };
 
