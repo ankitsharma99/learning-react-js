@@ -1,8 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { IMG_CDN_URL } from "../constants";
-import Shimmer from "../components/Shimmer";
-import Error from "./Error";
+import Shimmer from "./Shimmer";
 
 const RestaurantDetails = () => {
   const params = useParams();

@@ -7,9 +7,10 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Error from "./components/Error";
 import Contact from "./components/Contact";
+import Profile from "./components/Profile";
 
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import RestaurantDetails from "./components/RestaurantDetails";
+import RestaurantMenu from "./components/RestaurantMenu";
 /*
     Header
       - Logo
@@ -51,6 +52,12 @@ const appRouter = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+        children: [
+          {
+            path: "profile", // do not use /profile else react router dom will not understand that its relative to its parent
+            element: <Profile />,
+          },
+        ],
       },
 
       {
@@ -59,7 +66,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/restaurant/:id",
-        element: <RestaurantDetails />,
+        element: <RestaurantMenu />,
       },
     ],
   },
