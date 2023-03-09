@@ -7,7 +7,7 @@ import Error from "./Error";
 const RestaurantDetails = () => {
   const params = useParams();
 
-  const [restaurant, setRestaurant] = useState({});
+  const [restaurant, setRestaurant] = useState(null);
 
   useEffect(() => {
     getRestaurantInfo();
@@ -16,7 +16,8 @@ const RestaurantDetails = () => {
   // "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.7040592&lng=77.10249019999999&restaurantId=44058"
   async function getRestaurantInfo() {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/menu/v4/full?lat=28.7040592&lng=77.10249019999999&menuId=44058"
+      "https://www.swiggy.com/dapi/menu/v4/full?lat=28.7040592&lng=77.10249019999999&menuId=" +
+        params.id
     );
     const json = await data.json();
 
@@ -24,7 +25,9 @@ const RestaurantDetails = () => {
     setRestaurant(json.data);
   }
 
-  return (
+  return !restaurant ? (
+    <Shimmer />
+  ) : (
     <div className="menu">
       <div>
         <h1>Restaurant id: {params.id}</h1>
@@ -43,21 +46,9 @@ const RestaurantDetails = () => {
         <h1>Menu:</h1>
 
         <ul>
-          {restaurant ? (
-            restaurant.menu ? (
-              restaurant.menu.items ? (
-                Object.values(restaurant.menu.items).map((item) => (
-                  <li key={item.id}>{item.name}</li>
-                ))
-              ) : (
-                <Error />
-              )
-            ) : (
-              <Error />
-            )
-          ) : (
-            <Error />
-          )}
+          {Object.values(restaurant.menu.items).map((item) => (
+            <li key={item.id}>{item.name}</li>
+          ))}
         </ul>
       </div>
     </div>
