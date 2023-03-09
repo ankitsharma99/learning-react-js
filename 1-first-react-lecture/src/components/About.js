@@ -8,7 +8,7 @@ const About = () => {
       <p>Welcome to foodVilla</p>
       {/* <Outlet /> */}
       <ProfileFunctional name={"Ankit"} />
-      <Profile />
+      <Profile name={"Ankit Class"} />
     </div>
   );
 };
