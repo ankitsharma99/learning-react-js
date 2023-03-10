@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Profile from "./ProfileClass";
-import ProfileFunctional from "./Profile";
+// import ProfileFunctional from "./Profile";
 // const About = () => {
 //   return (
 //     <div>
@@ -17,17 +17,34 @@ import ProfileFunctional from "./Profile";
 class About extends React.Component {
   constructor(props) {
     super(props);
+
+    // console.log("Parent Constructor");
   }
+  componentDidMount() {}
   render() {
+    // console.log("Parent Render");
     return (
       <div>
         <h1>About Us Page</h1>
         <h3>Welcome to FoodVilla</h3>
-        <ProfileFunctional name="Ankit" />
-        <Profile />
+        <Profile name="First Child" />
+        {/* <Profile name="Second Child" /> */}
       </div>
     );
   }
 }
 
 export default About;
+
+/**
+ * Console.log Output sequence:
+ *  - Parent Constructor
+ *  - Parent Render
+ *    - First Child Constructor
+ *    - First Child Render
+ *    - Second Child Constructor
+ *    - Second Child Render
+ *    - First Child componentDidMount
+ *    - Second Child componentDidMount
+ *  - Parent componentDidMount
+ */
