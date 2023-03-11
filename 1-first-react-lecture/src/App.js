@@ -11,6 +11,7 @@ import Profile from "./components/Profile";
 
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import RestaurantMenu from "./components/RestaurantMenu";
+import Shimmer from "./components/Shimmer";
 // import Instamart from "./components/Instamart";    // lazy loading done below
 /*
     Header
@@ -69,7 +70,7 @@ const appRouter = createBrowserRouter([
       {
         path: "/instamart",
         element: (
-          <Suspense>
+          <Suspense fallback={<Shimmer />}>
             <Instamart />
           </Suspense>
         ),
