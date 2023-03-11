@@ -14,7 +14,7 @@ const RestaurantDetails = () => {
   ) : (
     <div className="menu">
       <div>
-        <h1>Restaurant id: {id}</h1>
+        <h1>Restaurant id: {id}</h1> 
         <h2>Namaste From our Restaurant</h2>
         <h3>{restaurant?.name}</h3>
         <img
