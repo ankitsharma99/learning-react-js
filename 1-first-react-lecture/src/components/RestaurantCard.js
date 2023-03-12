@@ -9,9 +9,9 @@ const RestaurantCard = ({
   costForTwoString,
 }) => {
   return (
-    <div className="w-56">
+    <div className="w-56 p-5 m-5 shadow-xl bg-gray-300">
       <img src={IMG_CDN_URL + cloudinaryImageId} />
-      <h2>{name}</h2>
+      <h2 className="font-bold 2xl">{name}</h2>
       <h5>{cuisines.join(", ")}</h5>
       <h3>{area}</h3>
       <span>

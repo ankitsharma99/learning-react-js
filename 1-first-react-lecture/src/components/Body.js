@@ -36,10 +36,10 @@ const Body = () => {
     <Shimmer />
   ) : (
     <>
-      <div className="p-5 m-5 bg-gray-100 margin-auto">
+      <div className="p-5 my-5 bg-gray-100 shadow-md">
         <input
           type="text"
-          className="p-3"
+          className="p-3 focus:bg-red-100 "
           placeholder="search"
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
@@ -58,7 +58,7 @@ const Body = () => {
       {filteredRestaurants?.length == 0 ? (
         <h1>No Restaurants Found</h1>
       ) : (
-        <div className="restaurant-list">
+        <div className="flex flex-wrap">
           {filteredRestaurants.map((restaurant) => {
             return (
               <Link
