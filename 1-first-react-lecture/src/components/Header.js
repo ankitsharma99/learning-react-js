@@ -5,7 +5,7 @@ import useOnline from "../components/utils/useOnline";
 const Title = () => (
   <Link to="/">
     <img
-      className="logo"
+      className="h-28 p-4"
       alt="logo-food-villa"
       src="https://lh3.googleusercontent.com/p/AF1QipO_6cTc3QdC9L2vAOyCkUPG-G-9YeFxo3YiDu3R=w1080-h608-p-no-v0"
     />
@@ -18,31 +18,35 @@ const Header = () => {
 
   console.log("rendering Head");
   return (
-    <div className="header">
+    <div className="flex justify-between bg-slate-100 shadow-lg">
       {/* {console.log("Any JS Code here")} */}
       <Title /> {/*Component Composition */}
       <div className="nav-items">
-        <ul>
-          <li>
+        <ul className="flex py-10">
+          <li className=" px-5">
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className=" px-5">
             <Link to="/about">About</Link>
           </li>
-          <li>
+          <li className=" px-5">
             <Link to="/contact">Contact Us</Link>
           </li>
-          <li>Cart</li>
-          <li>
+          <li className=" px-5">Cart</li>
+          <li className=" px-5">
             <Link to="/instamart">Instamart</Link>
           </li>
-          <li>{isOnline ? "✅" : "🔴"}</li>
+          <li className=" px-10">{isOnline ? "✅" : "🔴"}</li>
         </ul>
       </div>
       {isLoggedIn ? (
-        <button onClick={() => setisLoggedIn(false)}>Logout</button>
+        <button className=" px-5" onClick={() => setisLoggedIn(false)}>
+          Logout
+        </button>
       ) : (
-        <button onClick={() => setisLoggedIn(true)}>Login</button>
+        <button className=" px-5" onClick={() => setisLoggedIn(true)}>
+          Login
+        </button>
       )}
     </div>
   );

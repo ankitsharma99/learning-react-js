@@ -36,16 +36,16 @@ const Body = () => {
     <Shimmer />
   ) : (
     <>
-      <div className="search-container">
+      <div className="p-5 m-5 bg-gray-100 margin-auto">
         <input
           type="text"
-          className="search-input"
+          className="p-3"
           placeholder="search"
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />
         <button
-          className="search-btn"
+          className="p-3 m-3 bg-green-600 text-white rounded-lg"
           onClick={() => {
             const data = filterData(searchText, allRestaurants);
             setfilteredRestaurants(data);
