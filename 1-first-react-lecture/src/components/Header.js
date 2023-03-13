@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import useOnline from "../components/utils/useOnline";
+import UserContext from "./utils/UserContext";
 
 const Title = () => (
   <Link to="/">
@@ -15,6 +16,8 @@ const Title = () => (
 const Header = () => {
   const [isLoggedIn, setisLoggedIn] = useState(true);
   const isOnline = useOnline();
+
+  const { user } = useContext(UserContext);
 
   console.log("rendering Head");
   return (
@@ -36,7 +39,9 @@ const Header = () => {
           <li className=" hover:underline px-5">
             <Link to="/instamart">Instamart</Link>
           </li>
-          <li className=" px-10">{isOnline ? "✅ Online" : "🔴 Offline"}</li>
+          <li className=" px-10">
+            {isOnline ? `✅${user.name}` : `🔴Check Internet`}
+          </li>
         </ul>
       </div>
       {isLoggedIn ? (
