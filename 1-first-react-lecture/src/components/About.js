@@ -24,8 +24,8 @@ class About extends React.Component {
   render() {
     // console.log("Parent Render");
     return (
-      <div>
-        <h1>About Us Page</h1>
+      <div className="p-5 flex justify-center">
+        <h1 className="text-2xl">About Us Page</h1>
         <h3>Welcome to FoodVilla</h3>
         <Profile name="First Child" />
         {/* <Profile name="Second Child" /> */}

@@ -18,33 +18,39 @@ const Header = () => {
 
   console.log("rendering Head");
   return (
-    <div className="flex justify-between bg-slate-100 shadow-lg">
+    <div className="flex justify-between bg-slate-300 shadow-lg">
       {/* {console.log("Any JS Code here")} */}
       <Title /> {/*Component Composition */}
       <div className="nav-items">
         <ul className="flex py-10">
-          <li className=" px-5">
+          <li className="hover:underline  px-5">
             <Link to="/">Home</Link>
           </li>
-          <li className=" px-5">
+          <li className="hover:underline px-5">
             <Link to="/about">About</Link>
           </li>
-          <li className=" px-5">
+          <li className="hover:underline px-5">
             <Link to="/contact">Contact Us</Link>
           </li>
-          <li className=" px-5">Cart</li>
-          <li className=" px-5">
+          <li className="hover:underline px-5">Cart</li>
+          <li className=" hover:underline px-5">
             <Link to="/instamart">Instamart</Link>
           </li>
-          <li className=" px-10">{isOnline ? "✅" : "🔴"}</li>
+          <li className=" px-10">{isOnline ? "✅ Online" : "🔴 Offline"}</li>
         </ul>
       </div>
       {isLoggedIn ? (
-        <button className=" px-5" onClick={() => setisLoggedIn(false)}>
+        <button
+          className=" hover:text-red-700 px-5"
+          onClick={() => setisLoggedIn(false)}
+        >
           Logout
         </button>
       ) : (
-        <button className=" px-5" onClick={() => setisLoggedIn(true)}>
+        <button
+          className=" hover:text-red-700 px-5"
+          onClick={() => setisLoggedIn(true)}
+        >
           Login
         </button>
       )}

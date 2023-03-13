@@ -38,7 +38,7 @@ class Profile extends React.Component {
     const { count } = this.state;
     console.log("Child Render ");
     return (
-      <div>
+      <div className="p-5 m-5">
         <h1>Profile Component from Class</h1>
         <img src={this.state.userInfo.avatar_url} />
         <h2>Name: {this.state.userInfo.name}</h2>

@@ -36,16 +36,16 @@ const Body = () => {
     <Shimmer />
   ) : (
     <>
-      <div className="p-5 my-5 bg-gray-100 shadow-md">
+      <div className="p-2 my-10  flex justify-center">
         <input
           type="text"
-          className="p-3 focus:bg-red-100 "
-          placeholder="search"
+          className="p-2 border-2 focus:bg-slate-300 "
+          placeholder="Search Restaurants"
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />
         <button
-          className="p-3 m-3 bg-green-600 text-white rounded-lg"
+          className="p-2 m-3 hover:bg-slate-300 transition duration-300 ease-in-out hover:text-black bg-green-600 text-white rounded-lg"
           onClick={() => {
             const data = filterData(searchText, allRestaurants);
             setfilteredRestaurants(data);
@@ -58,7 +58,7 @@ const Body = () => {
       {filteredRestaurants?.length == 0 ? (
         <h1>No Restaurants Found</h1>
       ) : (
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap mx-28">
           {filteredRestaurants.map((restaurant) => {
             return (
               <Link
