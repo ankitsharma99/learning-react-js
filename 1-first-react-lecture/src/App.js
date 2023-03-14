@@ -1,5 +1,6 @@
 import React, { lazy, Suspense, useState } from "react";
 import ReactDOM from "react-dom/client";
+import { Provider } from "react-redux";
 import Header from "./components/Header"; // default import
 // import { Title } from "./components/Header"; // named import
 import Body from "./components/Body";
@@ -8,12 +9,14 @@ import About from "./components/About";
 import Error from "./components/Error";
 import Contact from "./components/Contact";
 import Profile from "./components/Profile";
-
+import store from "./components/utils/store";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Shimmer from "./components/Shimmer";
 import UserContext from "./components/utils/UserContext";
+import Cart from "./components/Cart";
 // import Instamart from "./components/Instamart";    // lazy loading done below
+
 /*
     Header
       - Logo
@@ -38,14 +41,14 @@ const AppLayout = () => {
     email: "sharmankit9593@gmail.com",
   });
   return (
-    <>
+    <Provider store={store}>
       <UserContext.Provider value={{ user: user }}>
         <Header />
         {/* Render all other components (Outlet) */}
         <Outlet />
         <Footer />
       </UserContext.Provider>
-    </>
+    </Provider>
   );
 };
 
@@ -85,6 +88,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/restaurant/:id",
         element: <RestaurantMenu />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
     ],
   },
