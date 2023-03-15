@@ -15,7 +15,7 @@ const cartSlice = createSlice({
       state.items.push(action.payload);
       // reducer functions do not return anything
     },
-    removeItem: (state, action) => {
+    removeItem: (state) => {
       state.items.pop();
     },
     clearCart: (state) => {
