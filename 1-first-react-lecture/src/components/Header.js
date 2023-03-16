@@ -9,6 +9,7 @@ import UserContext from "./utils/UserContext";
 const Title = () => (
   <Link to="/">
     <img
+      data-testid="logo"
       className="h-28 p-4"
       alt="logo-food-villa"
       src="https://lh3.googleusercontent.com/p/AF1QipO_6cTc3QdC9L2vAOyCkUPG-G-9YeFxo3YiDu3R=w1080-h608-p-no-v0"
@@ -43,15 +44,15 @@ const Header = () => {
             <Link to="/contact">Contact Us</Link>
           </li>
           <Link to="/cart">
-            <li className="hover:underline px-5">
+            <li className="hover:underline px-5" data-testid="cart">
               Cart - {cartItems.length} items
             </li>
           </Link>
           <li className=" hover:underline px-5">
             <Link to="/instamart">Instamart</Link>
           </li>
-          <li className=" px-10">
-            {isOnline ? `✅${user.name}` : `🔴Check Internet`}
+          <li className=" px-10" data-testid="online-status">
+            {isOnline ? `✅` : `🔴Check Internet`}
           </li>
         </ul>
       </div>
