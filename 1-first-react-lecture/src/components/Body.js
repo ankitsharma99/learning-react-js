@@ -43,6 +43,7 @@ const Body = () => {
           placeholder="Search Restaurants"
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
+          data-testid="search-input"
         />
         <button
           className="p-2 m-3 hover:bg-slate-300 transition duration-300 ease-in-out hover:text-black bg-green-600 text-white rounded-lg"
@@ -50,6 +51,7 @@ const Body = () => {
             const data = filterData(searchText, allRestaurants);
             setfilteredRestaurants(data);
           }}
+          data-testid="search-btn"
         >
           Search
         </button>
@@ -58,7 +60,7 @@ const Body = () => {
       {filteredRestaurants?.length == 0 ? (
         <h1>No Restaurants Found</h1>
       ) : (
-        <div className="flex flex-wrap mx-28">
+        <div className="flex flex-wrap mx-28" data-testid="res-list">
           {filteredRestaurants.map((restaurant) => {
             return (
               <Link
